@@ -69,8 +69,8 @@ def sync_batch(metrics_to_heal):
 
 
 def heal_metric(source, dest, start_time=0, end_time=None):
-    if end is None:
-        end = time()
+    if end_time is None:
+        end_time = time()
     try:
         with open(dest):
             try:
